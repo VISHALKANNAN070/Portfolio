@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal Kannan | Portfolio</title>
+  <link rel="stylesheet" href="./designs/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <!-- on-pc -->
+    <nav>
+      <ul id="nav-links">
+        <li class="hideonmobile"><a href="#home">Home</a></li>
+        <li class="hideonmobile"><a href="#about">About</a></li>
+        <li class="hideonmobile"><a href="#projects">Projects</a></li>
+        <li class="hideonmobile"><a href="#contact">Contact</a></li>
+        <li class="last-child showonmobile" onclick="show()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#62c4e2">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
+        </li>
+      </ul>
+      <!-- on-mobile -->
+      <ul id="nav-links-hamburger">
+        <li onclick="hide()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#62c4e2">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>-----------------</li>
+        <li><a href="https://github.com/VISHALKANNAN070/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+        <li><a href="https://leetcode.com/u/VishalKannan_070/">LeetCode</a></li>
+        <li><a href="https://drive.google.com/file/d/1jk4sKQUzuWyTIu9y5wzM4FAAPms3zQmW/view?usp=drive_link">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Hello, I'm <span>Vishal Kannan</span></h1>
+    <p>Web Developer | Engineer | Problem Solver</p>
+
+    <div class="social-links ">
+      <li class="tag hideonmobile"><a href="https://github.com/VISHALKANNAN070/">GitHub</a></li>
+      <li class="tag hideonmobile"><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+      <li class="tag hideonmobile"><a href="https://leetcode.com/u/VishalKannan_070/">LeetCode</a></li>
+      <li class="tag hideonmobile"><a href="https://drive.google.com/file/d/1jk4sKQUzuWyTIu9y5wzM4FAAPms3zQmW/view?usp=drive_link">Resume</a></li>
+    </div>
+  </section>
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate <strong>web developer</strong> with a strong
+          foundation in <strong>HTML, CSS, JavaScript</strong>, and backend
+          technologies. My background in <strong>engineering</strong> gives me
+          a structured approach to problem-solving. I enjoy building clean,
+          functional, and optimized web applications.
+        </p>
+      </div>
+      <div class="about-right">
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li><i class="fa-brands fa-html5"></i></li>
+            <li><i class="fa-brands fa-css3"></i></li>
+            <li><i class="fa-brands fa-js"></i></li>
+            <li><i class="fa-brands fa-java"></i></li>
+            <li><i class="fa-solid fa-copyright"></i></li>
+            <li><i class="fa-brands fa-git"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-solid fa-database"></i></li>
+          </ul>
+        </div>
+        <div class="languages">
+          <h3>Languages</h3>
+          <ul>
+            <li>Tamil</li>
+            <li>English</li>
+            <li>Japanese</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project">
+        <img src="./designs/bento.png" alt="Project 1" />
+        <div class="description">
+          <h3>Bento Grid</h3>
+          <p>
+            A Bento-style grid layout designed to practice CSS Grid
+            responsively
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./designs/clock.png" alt="Project 2" />
+        <div class="description">
+          <h3>Clock</h3>
+          <p>
+            A functional analog/digital clock built using HTML, CSS,
+            JavaScript.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Me</h2>
+        <p>Phone : +91 9600340022</p>
+        <p>Email: vishalkannan070@gmail.com</p>
+      </div>
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--================== SCRIPT  ============ -->
+  <script>
+    function show() {
+      const hamburger = document.querySelector("#nav-links-hamburger");
+      hamburger.style.display = "flex";
+    }
+    function hide() {
+      const hamburger = document.querySelector("#nav-links-hamburger");
+      hamburger.style.display = "none";
+    }
+    document.querySelectorAll("#nav-links-hamburger a").forEach((item) => {
+      item.addEventListener("click", hide);
+    });
+  </script>
+</body>
+
+</html>
