@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import "tailwindcss";
+
+
+html {
+  font-family: 'Unbounded', sans-serif;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
