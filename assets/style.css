@@ -175,8 +175,9 @@ h1 {
     border-bottom: var(--border-width) solid var(--border-color);
     transition: background 0.1s;
     cursor: pointer;
+    text-decoration: none;
 }
-.project-row:hover { background-color: #f4f4f4; }
+.project-row:hover,:active { background-color: #f4f4f4; text-decoration: none;}
 
 /* Typography Helpers */
 .meta-col {
