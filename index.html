@@ -18,11 +18,12 @@
             />
           </div>
 
-          <h1>VISHAL<br />KANNAN</h1>
+          <h1>VISHAL KANNAN</h1>
           <span class="role">FULL STACK DEVELOPER</span>
         </div>
 
         <div class="contact-links">
+          <button id="theme-btn" onclick="toggleTheme()">DARK MODE</button>
           <a href="https://github.com/VISHALKANNAN070" target="_blank"
             >GITHUB ↗</a
           >
@@ -124,7 +125,11 @@
 
         <div class="section-header">04 // Selected Projects</div>
 
-        <a href="https://github.com/VISHALKANNAN070/SyncSpace" target="_blank" class="project-row">
+        <a
+          href="https://github.com/VISHALKANNAN070/SyncSpace"
+          target="_blank"
+          class="project-row"
+        >
           <div class="meta-col">2025 // MERN</div>
           <div>
             <span class="title">SyncSpace</span>
@@ -140,7 +145,11 @@
           </div>
         </a>
 
-        <a href="https://github.com/VISHALKANNAN070/NotesApp" target="_blank" class="project-row">
+        <a
+          href="https://github.com/VISHALKANNAN070/NotesApp"
+          target="_blank"
+          class="project-row"
+        >
           <div class="meta-col">2025 // MERN</div>
           <div>
             <span class="title">NotesApp</span>
@@ -156,7 +165,11 @@
           </div>
         </a>
 
-        <a href="https://github.com/VISHALKANNAN070/LibraryManagementSystem" target="_blank" class="project-row">
+        <a
+          href="https://github.com/VISHALKANNAN070/LibraryManagementSystem"
+          target="_blank"
+          class="project-row"
+        >
           <div class="meta-col">2025 // JAVA</div>
           <div>
             <span class="title">Library Management System</span>
@@ -167,24 +180,105 @@
               with file handling for data persistence without using a database.
             </p>
           </div>
-        </>
+        </a>
 
-        <a href="https://github.com/VISHALKANNAN070/linux-toolkit" target="_blank" class="project-row">
+        <a
+          href="https://github.com/VISHALKANNAN070/linux-toolkit"
+          target="_blank"
+          class="project-row"
+        >
           <div class="meta-col">2025 // BASH</div>
           <div>
             <span class="title">Linux System Monitor Tool</span>
             <span class="tech-stack">Bash • Scripting • Dialog</span>
             <p class="desc">
-              Developed a terminal-based system monitoring toolkit with
-              running process and resource usage visualization,system log inspection. Implemented a keyboard-driven TUI with
-              configurable theme and packaged the tool for public
-              distribution via the Arch User Repository (AUR).
+              Developed a terminal-based system monitoring toolkit with running
+              process and resource usage visualization,system log inspection.
+              Implemented a keyboard-driven TUI with configurable theme and
+              packaged the tool for public distribution via the Arch User
+              Repository (AUR).
             </p>
           </div>
         </a>
 
-        <div style="height: 100px; background: #fff"></div>
+        <div class="section-header">05 // Certifications</div>
+
+        <div class="cert-grid">
+          <a
+            href="https://drive.google.com/file/d/1_ZOpYznqK3MZOWnTuN2_BIo1pj5ekGvu/view?usp=drive_link"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-header">
+              <span class="cert-year">2025</span>
+              <span class="cert-issuer">NPTEL</span>
+            </div>
+            <h3 class="cert-title">Database Management System</h3>
+            <span class="cert-arrow">VIEW CREDENTIAL ↗</span>
+          </a>
+
+          <a
+            href="https://drive.google.com/file/d/1ldIIOon7xma9rr4iGsxJ6WfCnbl1WPFA/view?usp=sharing"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-header">
+              <span class="cert-year">2023</span>
+              <span class="cert-issuer">NAT</span>
+            </div>
+            <h3 class="cert-title">N5 Japanese Language Proficiency</h3>
+            <span class="cert-arrow">VIEW CREDENTIAL ↗</span>
+          </a>
+
+          <a
+            href="https://www.hackerrank.com/certificates/3de3969ddc6e"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-header">
+              <span class="cert-year">2025</span>
+              <span class="cert-issuer">HACKERRANK</span>
+            </div>
+            <h3 class="cert-title">Problem Solving (Basic) Certificate</h3>
+            <span class="cert-arrow">VIEW CREDENTIAL ↗</span>
+          </a>
+
+          <a
+            href="https://www.hackerrank.com/certificates/3c07d6597e84"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-header">
+              <span class="cert-year">2025</span>
+              <span class="cert-issuer">HACKERRANK</span>
+            </div>
+            <h3 class="cert-title">SQL (Basic) Certificate</h3>
+            <span class="cert-arrow">VIEW CREDENTIAL ↗</span>
+          </a>
+        </div>
       </main>
     </div>
+    <script>
+      const btn = document.getElementById("theme-btn");
+      const body = document.body;
+
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme === "dark") {
+        body.setAttribute("data-theme", "dark");
+        btn.innerText = "LIGHT MODE";
+      }
+
+      function toggleTheme() {
+        if (body.getAttribute("data-theme") === "dark") {
+          body.removeAttribute("data-theme");
+          localStorage.setItem("theme", "light");
+          btn.innerText = "DARK MODE";
+        } else {
+          body.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark");
+          btn.innerText = "LIGHT MODE";
+        }
+      }
+    </script>
   </body>
 </html>
